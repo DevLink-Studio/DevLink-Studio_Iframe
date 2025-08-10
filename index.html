@@ -6,9 +6,20 @@
     <title>Логотип студии «DevLink Studio»</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        body, html {
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+        }
+
+        .container {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
         .custom-footer {
             background-color: #232323;
-            padding: 4px 0; /* Компактный отступ */
+            padding: 4px 0;
             text-align: center;
             display: flex;
             align-items: center;
@@ -19,17 +30,17 @@
             color: #aaa;
             text-decoration: none;
             font-family: 'Poppins', sans-serif;
-            font-size: 1.0rem; /* Уменьшен на 0.1rem */
+            font-size: 1.0rem;
             font-weight: 500;
             transition: color 0.4s ease;
             display: inline-flex;
             align-items: center;
-            gap: 7px; /* Уменьшен на 1px */
-            padding: 0 18px; /* Уменьшен на 2px */
+            gap: 7px;
+            padding: 0 18px;
         }
 
         .footer-logo {
-            height: 3.2em; /* Уменьшен на 0.3em */
+            height: 3.2em;
             filter: grayscale(1) brightness(0.8);
             transition: filter 0.4s ease;
             transform-origin: center;
