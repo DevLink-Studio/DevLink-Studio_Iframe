@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логотип студии «DevLink Studio»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        .custom-footer {
+            background-color: #232323;
+            padding: 4px 0; /* Компактный отступ */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-link {
+            color: #aaa;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.0rem; /* Уменьшен на 0.1rem */
+            font-weight: 500;
+            transition: color 0.4s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 7px; /* Уменьшен на 1px */
+            padding: 0 18px; /* Уменьшен на 2px */
+        }
+
+        .footer-logo {
+            height: 3.2em; /* Уменьшен на 0.3em */
+            filter: grayscale(1) brightness(0.8);
+            transition: filter 0.4s ease;
+            transform-origin: center;
+            will-change: transform;
+        }
+
+        .footer-link:hover {
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .footer-link:hover .footer-logo {
+            filter: grayscale(0) brightness(1.5);
+            animation: spin-rotate 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+        }
+
+        @keyframes spin-rotate {
+            0% {
+                transform: rotate(0) scale(1);
+            }
+            50% {
+                transform: rotate(180deg) scale(1.2);
+            }
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+        .footer-logo {
+            animation: subtle-float 6s ease-in-out infinite;
+        }
+
+        @keyframes subtle-float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-3px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-footer">
+        <a href="https://example.com"
+           target="_blank"
+           class="footer-link"
+           rel="noopener noreferrer">
+
+            <span>Made on</span>
+            <img src="src/Логотип DevLink Studio.svg"
+                 alt="DevLink Studio Logo"
+                 class="footer-logo">
+            <span>DevLink Studio</span>
+        </a>
+    </div>
+</body>
+</html>
