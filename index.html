@@ -37,7 +37,7 @@
             justify-content: center;
             width: 100%;
             height: 100%;
-            min-height: 100px; /* Увеличено для большего логотипа */
+            min-height: 100px;
         }
 
         .footer-link {
@@ -48,7 +48,7 @@
             transition: color 0.4s ease;
             display: inline-flex;
             align-items: center;
-            padding: 0 15px !important; /* Увеличено для большего логотипа */
+            padding: 0 15px !important;
             height: 100%;
             flex-wrap: wrap;
             justify-content: center;
@@ -56,13 +56,13 @@
 
         .footer-text {
             white-space: nowrap;
-            font-size: clamp(0.8rem, 2.5vw, 1.2rem); /* Слегка увеличен размер текста */
+            font-size: clamp(0.8rem, 2.5vw, 1.2rem);
         }
 
         .footer-logo {
-            height: 4.0em; /* Увеличен размер SVG */
-            max-height: 100px; /* Увеличено для большего логотипа */
-            min-height: 75px; /* Увеличено для большего логотипа */
+            height: 4.0em;
+            max-height: 100px;
+            min-height: 75px;
             filter: grayscale(1) brightness(0.8);
             transition: filter 0.4s ease;
             transform-origin: center;
@@ -105,7 +105,7 @@
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-4px); /* Слегка увеличен эффект */
+                transform: translateY(-4px);
             }
         }
 
@@ -116,14 +116,14 @@
                 padding: 0 12px !important;
             }
             .footer-logo {
-                height: 2.8em; /* Сохранено пропорциональное увеличение */
+                height: 2.8em;
             }
         }
 
         /* Портретная ориентация */
         @media (orientation: portrait) {
             .custom-footer {
-                padding: 4px 0 !important; /* Слегка увеличено */
+                padding: 4px 0 !important;
             }
         }
 
@@ -137,14 +137,14 @@
                 font-size: 0.7rem;
             }
             .footer-logo {
-                height: 2.5em; /* Сохранено пропорциональное увеличение */
+                height: 2.5em;
             }
         }
 
         /* Большие экраны */
         @media (min-width: 1920px) {
             .footer-logo {
-                height: 3.5em; /* Сохранено пропорциональное увеличение */
+                height: 3.5em;
             }
         }
 
@@ -160,7 +160,7 @@
 </head>
 <body>
     <div class="custom-footer">
-        <a href="https://example.com"
+        <a href="https://devlink-studio.github.io/DevLinkStudio-Mirror/"
            target="_blank"
            class="footer-link"
            rel="noopener noreferrer"
@@ -172,7 +172,7 @@
                  class="footer-logo"
                  decoding="async"
                  loading="lazy"
-                 width="100" height="100"> <!-- Увеличено для большего логотипа -->
+                 width="100" height="100">
             <span class="footer-text">DevLink Studio</span>
         </a>
     </div>
