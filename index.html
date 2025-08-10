@@ -25,19 +25,19 @@
             width: 100% !important;
             height: 100% !important;
             line-height: 1.2 !important;
-            background-color: #232323 !important;
+            background-color: #000 !important;
             touch-action: manipulation;
         }
 
         .custom-footer {
-            background-color: #232323;
+            background-color: #000;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
             height: 100%;
-            min-height: 60px; /* Увеличено для большего логотипа */
+            min-height: 100px; /* Увеличено для большего логотипа */
         }
 
         .footer-link {
@@ -48,7 +48,6 @@
             transition: color 0.4s ease;
             display: inline-flex;
             align-items: center;
-            gap: 10px; /* Увеличено расстояние между элементами */
             padding: 0 15px !important; /* Увеличено для большего логотипа */
             height: 100%;
             flex-wrap: wrap;
@@ -61,9 +60,9 @@
         }
 
         .footer-logo {
-            height: 3.0em; /* Увеличен размер SVG */
-            max-height: 60px; /* Увеличено для большего логотипа */
-            min-height: 30px; /* Увеличено для большего логотипа */
+            height: 4.0em; /* Увеличен размер SVG */
+            max-height: 100px; /* Увеличено для большего логотипа */
+            min-height: 75px; /* Увеличено для большего логотипа */
             filter: grayscale(1) brightness(0.8);
             transition: filter 0.4s ease;
             transform-origin: center;
@@ -149,36 +148,6 @@
             }
         }
 
-        /* Остальные стили остаются без изменений */
-        /* Темная тема */
-        @media (prefers-color-scheme: dark) {
-            .custom-footer {
-                background-color: #121212;
-            }
-            .footer-link {
-                color: #888;
-            }
-        }
-
-        /* Светлая тема */
-        @media (prefers-color-scheme: light) {
-            .custom-footer {
-                background-color: #f5f5f5;
-            }
-            .footer-link {
-                color: #666;
-            }
-            .footer-link:hover {
-                color: #000;
-            }
-            .footer-logo {
-                filter: grayscale(1) brightness(0.6);
-            }
-            .footer-link:hover .footer-logo {
-                filter: grayscale(0) brightness(1);
-            }
-        }
-
         /* Отключение анимаций для пользователей с настройками доступности */
         @media (prefers-reduced-motion: reduce) {
             * {
@@ -203,7 +172,7 @@
                  class="footer-logo"
                  decoding="async"
                  loading="lazy"
-                 width="48" height="48"> <!-- Увеличено для большего логотипа -->
+                 width="100" height="100"> <!-- Увеличено для большего логотипа -->
             <span class="footer-text">DevLink Studio</span>
         </a>
     </div>
